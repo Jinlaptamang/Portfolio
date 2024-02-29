@@ -1,0 +1,34 @@
+<Canvas camera={{position:[2,-12,2],fov:90}}>
+                        <OrbitControls enableZoom={false}
+                            autoRotate={true}
+                            
+                        />
+                        <Stage intensity={0.7}
+                            scale={4}>
+                            <Model/>
+                        </Stage>
+                    </Canvas>
+
+
+
+
+
+
+                    <div className="flex items-center h-full  w-full">
+                        <Canvas camera={
+                                {
+                                    position: [
+                                     1000, -100, 490
+                                    ],
+                                    fov: 90
+                                }
+                            }
+                            className=''>
+                            <OrbitControls enableZoom={false}
+                                autoRotate={true} />
+                            <Stage intensity={1.9}
+                                scale={14} shadows={false}>
+                                <Mail/>
+                            </Stage>
+                        </Canvas>
+                        </div>
